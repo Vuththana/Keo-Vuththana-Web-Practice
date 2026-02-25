@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 001</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="font-mono">
+    <div class="w-screen h-screen flex justify-center items-center gap-[50px]">
+        <div class="w-[500px] h-[300px] flex flex-col rounded-[15px] bg-[#EBB1D5]">
+            <div class="flex justify-center items-start p-[20px]">
+                <p class="text-white text-[30px]">Timer: <span id="timer">00:00:00</span></p>
+            </div>
+
+            <div class="w-full h-full flex justify-evenly items-end p-[20px] font-[500]">
+                <button class="bg-green-500 text-white px-[15px] py-[10px] rounded-[5px]" id="start">Start</button>
+                <button  class="bg-red-500 text-white px-[15px] py-[10px] rounded-[5px]" id="stop">Stop</button>
+                <button  class="bg-orange-500 text-white px-[15px] py-[10px] rounded-[5px]" id="reset">Reset</button>
+            </div>
+        </div>
+
+        <div class="w-[500px] h-[250px] grid rounded-[15px] items-center bg-[#EBB1D5] text-white p-[20px] gap-[30px]">
+            <div>
+                <p class="text-[30px] text-center">Check Phone Number</p>
+            </div>
+            <div class="self-center justify-self-center">
+                <label for="phone_number">Phone Number: </label>
+                <input class="text-black rounded-[15px] px-[6px]" type="text" name="phone_number" id="phone_number">
+                <p id="message"></p>
+            </div>
+            <div class="justify-self-center">
+                <button id="check" class="bg-green-500 text-white px-[15px] py-[10px] rounded-[5px]">Check Phone Number</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
